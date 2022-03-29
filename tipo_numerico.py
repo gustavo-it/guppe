@@ -14,3 +14,8 @@ posso utilizar valores maiores da seguinte forma: 1_000_00 (separando por underl
 """
 num = 1_000_00
 print(num)
+
+# Transformando int em float
+print(float(num))
+
+
