@@ -33,3 +33,4 @@ print(type(variavel))
 numeroint = 5
 print(float(numeroint))
 
+
