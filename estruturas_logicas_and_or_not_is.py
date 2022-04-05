@@ -77,14 +77,17 @@ print(ativo is True)
     # print("Parabéns, você pode se aposentar")
 
 # elif idade >= 60 and tempo_de_trabalho >= 25:
-    # print("Parabéns, você pode se aposentar")
+    # Print("Parabéns, você pode se aposentar")
+
+
 # else:
-    # print("Você não pode se aposentar")
+    # Print("Você não pode se aposentar")
 
 
 salario = float(input("Digite seu salário: "))
 emprestimo = float(input("Digite o valor do seu empréstimo: "))
-prestacao = (emprestimo/salario) * 100 # Transformando em porcentagem
+prestacao = (emprestimo/salario) * 100
+# Transformando em porcentagem
 
 
 if prestacao >= 20.0:
