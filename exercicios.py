@@ -21,3 +21,21 @@ nome = 'Docker Container'
 
 for letra in enumerate(nome):
     print(letra)
+
+impar = 0
+
+valor_inical, valor_final = [int(x) for x in input('Digite o valor inicial e valor final: ').split()]
+
+for i in list(range(valor_inical, valor_final)):
+    if i % 2 != 0:
+        impar = impar + i
+print(f'A soma é {impar}')
+
+inicio = int(input('Digite o valor inicial: '))
+fim = int(input('Digite o valor final: '))
+soma = 0
+
+for numero in range(inicio, fim):
+    if numero % 2 == 1:
+        soma = soma + numero
+print(f'A soma é {soma}')

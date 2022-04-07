@@ -129,4 +129,5 @@ for n in range(1, qtd + 1):  # Incluindo o final do range com '+1'
     soma = soma + numero
 print(f"A soma é {soma}")
 
+descartar valores com _
 """
