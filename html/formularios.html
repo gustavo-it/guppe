@@ -95,7 +95,7 @@
     <h2>Button, Submit e Reset</h2>
     <input type="submit" value="botão"/> <!-- "Submit" é usado para que o usuário envie o formulário. -->
     <input type="reset" value="botão"/> <!-- "Reset" é usado para reiniciar o formulário -->
-</body>
+   
     <h2>Select e DataList</h2>
     <form>
         <select>
@@ -119,4 +119,35 @@
             do tipo texto. Conforme digitamos algo no input, as options de datalist aparecem como autocomplete. -->
         </datalist>
     </form>
+    <h2>Utilizando FildSet e Legend</h2>
+    <form>
+        <fieldset>
+            <legend>Cadastro</legend>
+            Nome: <input type="text"></br>
+            Email: <input type="email"></br>
+        </fieldset>
+    <!-- Serve para criarmos um campo dentro do formulário para poder melhor organizar os campos.
+    A tag legend serve para darmos título à seção.-->
+    </form>
+
+    <h2>Label</h2>
+    <form>
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+       <!-- Esta tag serve para darmos nomes aos campos. Se passarmos o id do input no atributo "for"
+        estaremos indicando ao navegador que o Label é referente aquele campo. Quando o usuário clica
+        no texto do Label, o input receberá o foco, permitindo que o usuário entre com os dados -->
+    </form>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0 <input type="range" id="a" value="50"> 100
+            +
+        <input type="number" id="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+          
+            <!-- Neste exemplo, utilizamos o range e um campo de número que o usuário pode mudar à vontade. 
+            Conforme os valores forem alterados, o campo output exibe o resultado da soma que fizemos por JavaScript.
+            -->
+        </form>
+    </body>
 </html>
