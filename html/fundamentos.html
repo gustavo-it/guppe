@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>HTML Fundamentos</title>
 </head>
 <body>
-<h2> A seguir nós temos tags relacionadas a formatação de texto</h2>
+<h2 id="primeiro_titulo"> A seguir nós temos tags relacionadas a formatação de texto</h2>
     <section>
     <strong>
         Deixa o texto em negrito
@@ -133,9 +133,33 @@
                 <td>Silva</td>
                 <td>21</td>
             </tr>
+            <tr>
+                <td>Alice</td>
+                <td>Vieira</td>
+                <td>22</td>
+            </tr>
             </tbody>
         </table>
+    </section>
 
+    <section>
+        <h2>Links e âncoras</h2>
+        <p>Podemos linkar uma página a outra, ou até mesmo fazer referências através da tag "a".
+            Para isso passamos o nome do arquivo ou link via "href=".
+            Podemos utilizar o valor "target="_blank" para abrir em uma nova janela.
+            <a href="https://www.google.com.br/" target="_blank">link do google</a>
+        </p>
+        <p>
+            Se quisermos fazer download de algum arquivo, podemos passar o endereço do arquivo em href
+            e passar para a tag "a" o atributo download.
+        </p>
+        <p>
+            Outro uso da datg "a" é a criação de âncoras na página.sso faz com que quando o usuário
+            estiver em uma página muito grande, ao clicar em um link a página irá rolar
+            até o conteúdo marcado com a âncora. Para isso, basta passar um atributo “id” com um nome para o
+            elemento que se quer localizar, e passar esse nome no href com “#”.
+            <a href="#primeiro_titulo">Voltar ao topo da página.</a>
+        </p>
     </section>
 
 </body>

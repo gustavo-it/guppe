@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    <p>
+        essa tag não apresenta uma referência visual quando criada, mas representa semanticamente um formulário,
+        então é dentro dela que devemos criar nossos campos.
+    </p>
+    <form accept-charset="UTF-8">
+        <!-- "accept-charset" É utilizado para definir qual o chasert será utilizado pelo formulario -->
+    </form>
+
+    <form autocomplete="on">
+        <!-- Sempre que definirmos o atributo autocomplete (auto completar), a medida em que usamos os campos
+        de um formulário o navegador irá começar a sugerir valores para o que estamos digitando,
+        com base em valores que foram digitados. -->
+    </form>
+    <form action="http://www.nosso-servidor.com.br/cadastro/usuario.php">
+        <!-- Esse atributo indica para onde os dados do formulário serão enviados. -->
+    </form>
+    <form method="post" enctype="multipart/form-data" novalidate>
+        <!-- Especifica o método do HTTP que será utilizado para a submissão (get ou post) -->
+        <!-- ENCTYPE = Especifica quando os dados do formulário precisam ser codificados antes de serem enviados
+        ao servidor. SÓ FUNCIONA PARA MÉTODOS DO TIPO POST.-->
+        <!-- NOVALIDATE impede a validação dos campos antes da submissão. -->
+        <!-- PODEMOS UTILIZAR O ATRIBUTO "target="_blank"" ASSIM COMO NA TAG "a" -->
+    </form>
+    <p>
+        Os formulários possuem campos onde inserimos dados. Os campos mais comuns dos formulários são criados
+        pela tag "input", que tem o atributo type onde indicamos o tipo de campo que queremos.
+    </p>
+
+    <form>
+        <input type="text" placeholder="Digite aqui seu primeiro texto"> <!-- Texto que aparece quando o campo está vazio -->
+        <input type="text" maxlength="15"> <!-- Quantidade máxima de carcteres -->
+        <input type="text" required> <!-- Indica que o campo é necessário. -->
+        <input type="text" disabled> <!-- Deixa o campo desabilitado -->
+        <input type="text" readonly><!-- Impede edições no campo, permite apenas que o usuário leia o valor. -->
+        <textarea>Escreva aqui sua sugestão..</textarea> <!-- Permite o usuário escrever mais de uma linha -->
+        <!-- No textarea podemos passar os atributos rows e cols para indicar quantas linhas e colunas o campo vai exibir -->
+    </form>
+
+    <form>
+        <input type="email">
+        <input type="search">
+        <input type="url">
+        <!-- Em dispositivos que exibem teclado na tela, esses tipos fazem com que o teclado exibido
+         seja diferente. Um exemplo é o tipo "email", que exibe uma tecla @. Também haverá validação
+         se não escrevermos um formato válido.-->
+        <input type="number">
+        <!-- indica um campo do tipo número. -->
+    </form>
+
+    <h2>Radio Button</h2>
+    <h3>Você é maior de idade ?</h3>
+    <form>
+        <input type="radio" name="maior_de_idade" checked="checked" /> Sim
+        <input type="radio" name="maior_de_idade"> Não
+        <!--Cria um Radio Button, onde podemos selecionar apenas uma opção. Note que colocamos
+        o mesmo nome nos dois inputs. Isso faz com que o navegador entenda que ambos
+        pertencem ao mesmo campo. Se passarmos nomes diferentes poderíamos selecionar os
+        dois valores, o que não é o objetivo dos Radio Buttons.-->
+    </form>
+
+    <h2>CheckBox</h2>
+    <h3>Escolha quantas cores você desejar.</h3>
+    <form>
+        <input type="checkbox" name="cor1" /> Azul
+        <input type="checkbox" name="cor2" /> Vermelho
+        <input type="checkbox" name="cor3" /> Amarelo
+        <!-- Diferente do Radio Button, onde só selecionamos uma opção, o CheckBox serve
+        para selecionarmos mais de uma opção. -->
+    </form>
+
+    <h2>Trabalhando com datas</h2>
+    <form>
+        <input type="date" /> <!-- Serve para selecionar dia/mês/ano -->
+        <input type="time" /> <!-- Seleciona a hora -->
+        <input type="datetime-local"> <!-- Seleciona data e hora -->
+        <input type="month" /> <!-- Seleciona o mês de tal ano -->
+        <input type="week" /> <!-- Seleciona a semana de tal ano -->
+    </form>
+
+   <h2>Outros exemplos</h2>
+    <form>
+        <input type="range" min="0" max="100" /> <!-- Permite que o usuário escolha um valor entre mínimo
+        e máximo passados -->
+        <input type="color" /> <!-- Abre uma paleta de seleção de cores -->
+        <input type="file"> <!-- Permite que a gente selecione um arquivo de nosso computador -->
+    </form>
+
+    <h2>Button, Submit e Reset</h2>
+    <input type="submit" value="botão"/> <!-- "Submit" é usado para que o usuário envie o formulário. -->
+    <input type="reset" value="botão"/> <!-- "Reset" é usado para reiniciar o formulário -->
+</body>
+    <h2>Select e DataList</h2>
+    <form>
+        <select>
+            <option value="Html">HTML5</option>
+            <option value="Css">CSS</option>
+            <!-- Nos permite criar uma lista onde podemos selecionar um item. Cada opção é criada pela tag
+            option. O atributo "value" da tag option é o valor a ser enviado ao servidor, e o valor dentro
+            da tag será exibido ao usuário. -->
+        </select>
+
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+            <!-- Podemos ter um efeito parecido com a tag DataList, mas ela funciona em conjunto com a
+            tag input.-->
+            <!-- Devemos linkar o input ao id do datalist. DataList também recebe options. E ela é um input
+            do tipo texto. Conforme digitamos algo no input, as options de datalist aparecem como autocomplete. -->
+        </datalist>
+    </form>
+</html>
