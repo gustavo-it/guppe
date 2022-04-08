@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Fundamentos</title>
+</head>
+<body>
+<h2> A seguir nós temos tags relacionadas a formatação de texto</h2>
+    <section>
+    <strong>
+        Deixa o texto em negrito
+    </strong>
+    <em>
+        Deixa o texto em itálico
+    </em>
+
+    <ins>
+        Deixa o texto sublinhado.
+    </ins>
+
+    <del>
+    Deixa o texto riscado. Indica um texto que foi removido.
+    </del>
+
+    <small>
+        Define um texto pequeno.
+    </small>
+
+
+    <sup>
+        Deixa o texto um pouco acima do texto comum.
+    </sup>
+
+    <sub>
+        Deixa o texto um pouco abaixo do texto comum.
+    </sub>
+
+    <q>
+        Marca uma citação. Colocando o texto entre aspas.
+    </q>
+
+    <p>
+        Quebrando um texto com <br/>
+        A tag br.
+    </p>
+
+    <span>
+        Define uma seção no texto. Não tem efeito na formatação. Não tem efeito na formatação.
+        Mas utilizaremos muito com CSS.
+    </span>
+
+    <p>
+        A seguir definindo uma linha horizontal.
+    </p><hr />
+
+    <p>
+        Abaixo nós veremos uma tag que podemos utilizar para definir que o texto deverá ser renderizado
+        em uma determinada direção. o atributo dir tem o valor <q>rtl(Right to Left)</q>
+    </p>
+
+    <bdo dir="rtl">Meu texto aqui</bdo>
+    </section>
+    <ruby>
+        <!-- É mais utilizado para textos com palavras escritas com ideogramas. funciona junto com a tag
+         rt, onde passamos a leitura ou significado do ideograma.-->
+        水 <rt>Água</rt>
+    </ruby>
+
+    <section>
+        <h2>Apresentação de Dados</h2>
+        <p>
+            Lista ordenadas. Indica uma lista ordenada por números ou letras. para isso utilizamos a tag
+            "ol", para criar a lista e "li" para indicar os itens.
+            Podemos passar um atributo "type" para a tag ol. para indicarmos o tipo de ordenação que queremos
+        </p>
+        <ol type="1">
+            <li>type="1" - Lista por números;</li>
+            <li>type="A" - Lista por letras maiúsculas;</li>
+            <li>type="a" - Lista por letras minúsculas;</li>
+            <li>type="I" - Lista por números romanos maiúsculos;</li>
+            <li>type="i" - Lista por números romanos minúsculos.</li>
+        </ol>
+
+        <p>
+            Listas não ordenadas, ou seja, sem identificadores.
+        </p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PYTHON</li>
+        </ul>
+        <p>
+            Listas de descrição. Essas listas são formadas pela tag "dl", e nelas a gente indica o nome de um
+            termo "dt" e depois listamos descrições sobre esse termo "dd";
+        </p>
+        <dl>
+            <dt>Python</dt>
+            <dd>Linguagem de programação</dd>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+        </dl>
+
+        <p>
+            Podemos representar o progresso de algum processo com a tag de progress. Passamos o valor total do
+            progresso no atributo "max", e o valor do progresso em "value.
+        </p>
+        <progress value="30" max="100"></progress>
+
+        <p>
+            Podemos ter algo parecido com a tag meter. Também podemos indicar quais valores são considerados
+            altos e baixo com os atributos high e low.
+        </p>
+        <meter value="30" max="100" min="10"></meter>
+
+        <p>
+            Para iniciarmos utilizamos a tag "table". Em seguida temos que definir uma linha. Linhas são
+            definidas pela tag "tr". Dentro de cada linha temos as colunas, que são definidas pela tag "td".
+            Caso você queria definir melhor a separação do cabeçalho e o corpo da tabela, você pode utilizar
+            as tags "thead" e "tbody". Para indicar o título de uma tabela utilizamos "th" no lugar de "td".
+        </p>
+
+        <table> <!-- Começando a tabela -->
+            <thead> <!-- Cabeçalho da tabela é indicado por essa tag -->
+            <tr> <!-- Uma nova linha é indicada por essa tag -->
+                <th>Nome</th> <!-- Indica o título de uma tabela -->
+                <th>Sobrenome</th>
+                <th>Idade</th>
+            </tr>
+            </thead>
+            <tbody> <!-- A partir daqui temos o corpo da tabela, onde irá ficar as informações -->
+            <tr> <!-- Uma nova linha é indicada por essa tag -->
+               <td>Maria</td> <!-- Essas são as colunas da tabela -->
+                <td>Silva</td>
+                <td>21</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+</body>
+</html>
