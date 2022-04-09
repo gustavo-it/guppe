@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semântica</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+<body>
+<nav>
+  <a href="/">Home</a> |
+  <a href="/servicos/">Serviços</a> |
+  <a href="/sobre/">Sobre Nós</a> |
+  <a href="/contato/">Contato</a>
+    <!-- Define um grupo de links de navegação. É muito utilizada nos menus utilizados para
+    se navegar entre as páginas de um site. -->
+</nav>
+<main>
+  <h1>Notícias do Dia</h1>
+
+  <article>
+    <h1>Novo curso de JavaScript</h1>
+    <p>Conheça o novo curso de . . . </p>
+  </article>
+
+  <article>
+    <h1>Chrome lança nova funcionalidade</h1>
+    <p>O navegador lançou ontem uma nova maneira de . . . </p>
+  </article>
+<!-- Define a parte principal de um documento. Por ser indicado como principal, Não deve ser filha
+de outras tags, como "article", "header". -->
+</main>
+<abbr title="União Nacional dos Estudantes" >UNE</abbr> esta semana anunciou que …
+<!-- Define uma abreviatura ou sigla. Passamos o atributo title com o significado da sigla.
+Assim um tradutor poderia entender que esse  "UNE" é uma sigla =, e não o verbo unir. -->
+<address>Av. Testando código html - União - São Paulo</address>
+<!-- Defini informações de contato -->
+<article>
+    <h1>Google planeja criação de nova assistente virtual</h1>
+    <p>Hoje o Google deu uma notícia que pode....</p>
+    <!-- Define um artigo. Muito utilizado em posts de blogs-->
+</article>
+<aside>
+    Outros posts relacionados a essa notícia...
+    <!-- Define um conteúdo ao lado do conteúdo da página. -->
+</aside>
+<code>
+   var counter = 0;
+    <!-- Define um pedaço de código -->
+</code>
+<section>
+<details>
+    <summary>Lista de Cursos</summary>
+<ul>
+  <li>HTML5 e CSS3</li>
+  <li>JavaScript</li>
+  <li>Node.js</li>
+</ul>
+    <!-- A tag "details" serve para acrescentar detalhes adicionais sobre algo, mas essa informação fica
+    escondida, sendo exibida apenas quando o usuário clicar para ler. A tag "summary" serve para exibir um
+    título para o "details", que sempre ficará visível. -->
+    <!-- Section define uma seção no documento. -->
+</details>
+    </section>
+<dfn>HTML</dfn> significa HyperText Markup Language, e é utilizado para a estruturação de páginas web.
+<!-- Maraca a definição de um termo. Espera-se que o conteúdo mais próximo contenha a definição do termo
+que estiver dentro da tag "dfn". -->
+Meu Texto
+<dialog open> Minha Modal </dialog>
+<!-- A tag "dialog" serve para criarmos modais (aquelas janelas que abrem em cima do conteúdo. -->
+<p>O evento irá ocorrer em <time datetime="2017-07-07 21:00">
+    7 de julho de 2017 às 9 da noite</time>.
+    <!-- Essa tag é utilizada no meio de textos, define data/hora. Pode ser utilizado para
+    que softwares encontrem facilmente datas nos documentos, podendo utilizá-las para
+    melhorar pesquisas ou se oferecer para guardar aquela data em alguma agenda.
+    O atributo "datetime" representa data/hora no formato que os computadores entendam. -->
+</p>
+<footer>@Site_Teste em HTML5
+<!-- rodapé para o documento ou seção. -->
+</footer>
+<article>
+  <header>
+    <h1>Novos cursos na TreinaWeb!</h1>
+   </header>
+  <p>TreinaWeb anuncia novos cursos este mês . . .
+    <!-- Define um cabeçalho para o documento ou seção. NÃO CONFUNDA COM A TAG "HEAD", ONDE DEFINIMOS INFORMAÇÕES
+    SOBRE O DOCUMENTO. -->
+</article>
+</body>
+</html>

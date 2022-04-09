@@ -1,0 +1,108 @@
+/* Cores em css
+    Podemos passar as cores pelo seu nome.
+
+    RGB - Para se obter uma cor, passamos a quantidade de vermelho, verde, azul
+    que queremos. O menor valor é 0, o maior é 255.
+    RGBA - ACEITA TRANSPARÊNCIA. O valor máximo é 1 e mínimo 0.
+
+    HEXADECIMAL - É o mais utilizado, no hexadecimal a contagem vai de 0 a F.
+
+    HSL - Serve para declarar cores de acordo com três parâmetros
+    H - HUE (TOM)
+    S - SATURATION (SATURAÇÃO)
+    L - LIGHTNESS (ILUMINAÇÃO)
+    Passamos um valor númerico (de 0 a 360) e duas porcentagens.
+
+    HSLA - MESMO FORMATO DO RGBA, ACEITA TRANSPARÊNCIA.
+*/
+
+div {
+    width: 50%;
+    color: rgb(255, 0, 0); /* Altera a cor da fonte */
+    background-color: grey; /* Muda a cor do fundo dos elementos. Podemos usar background-image*/
+    opacity: 0.5; /* NÃO É PROPRIEDADE DE COR, MAS INFLUÊNCIA NA VISIBILIDADE. */
+    border-width: 5px; /* Definindo a largura de uma borda */
+    border-style: solid; /* Definindo o estilo */
+    border-color: #22FF22; /* Definindo a cor da borda */
+}
+/*
+body{
+    width: calc((100% / 3) - 2px);  Utilizando a função calculo
+}*/
+span{
+    color: blue;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif; /* Definir o nome da fonte */
+    font-style: normal; /* É utilizada para definir o estilo da fonte */
+    font-variant: normal; /* Define as variantes do tamanho da fonte */
+    font-weight: 300 ; /*Usada para definir a espessura dos traços da fonte */
+    font-size: medium; /*Define o tamanho da fonte em uso. PODEMOS DEFINIR EM PX OU % TAMBÉM*/
+    font-size-adjust: none; /* Especifica que o tamanho da fonte deve ser escolhido
+    baseado nas altura das letras minúsculas */
+    text-indent: 15px; /*Permite aplicar espaõ à primeira linha de um parágrafo*/
+    text-align: justify; /* Alinhando o texto*/
+    text-decoration: none; /* Possibilita aplicar efeitos ou decorações em textos.
+    Como sublinhas, colocar uma linha, etc. */
+    text-transform: none; /*Controla o tipo de caixa do texto.*/
+    /*text-shadow: 2px 2px 5px #FF0000; Adiciona sombras ao texto
+    Passamos a posição horizontal, vertical, nível de ofuscação e cor da sombra.
+    */
+}
+
+p.teste {
+    color: green;
+    letter-spacing: normal; /* Aplica um espaço entre as letras do texto do elemento.*/
+    word-spacing: normal; /* Define um espaçamento entre as palavras */
+    line-height: normal; /* Aplica a altura da linha em porcentagem */
+}
+
+/* Os elementos HTML são como blocos. Há basicamente dois tipos de exibição
+    dessas caixas: block e inline.
+    Block: Elemenos que ocupam a linha inteira, ou seja, o próximo elemento será
+    jogado para baixo.
+
+    inline: Elementos que seu tamanho depende do tamanho do conteúdo, então não podemos
+    definir altura e largura.
+
+    inline-block: é uma mistura do comportamento inline e block. Tem o mesmo comportamento
+    do inline, porém podemos definir largura e altura.
+
+    Essa caixas, possuem margens internas e externas (padding e margin) e conteúdo (content).
+*/
+h1{
+    display: block;
+}
+
+h2 {
+    /*display: none; Conteúdo não será apresentado */
+    outline-color: #22FF22;
+}
+
+h3 {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #264968;
+    width: 400px; /* Largura do content */
+    margin: 10px; /* Margem externa */
+    padding: 15px; /* Margem interna */
+    border: 5px solid #cecece; /*borda */
+    border-radius: 0%; /* Serve para erredondarmos as bordas do elemento */
+}
+
+div{
+    width: 100%;
+    max-width: 1200px;
+    /* Imagine..quero que a div ocupe 100% da tela, mas e se a pessoa estiver com
+    um monitor muito largo ? Nosso layout poderia ficar estranho. Para isso
+    temos a possibilidade de passar um valor máximo para as dimensões de um elemento.
+    */
+    box-shadow:10px 10px 5px #888888 ; /* Serve para aplicar sombras ao elemento /*
+    /* Passamos a posição horizontal, vertical, nível de ofuscamento e cor da sombra */
+}
+
+/* Propriedade overflow, define quando o conteúdo de um elemento deve ser exibido,
+escondido ou gerar uma barra de rolagem, quando este conteúdo for maior que o elemento que contém.
+o valor mais interessante é overflow:scroll ou auto, onde será exibido uma barrade rolagem.
+*/

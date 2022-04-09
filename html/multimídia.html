@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimídia</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+<body>
+
+<img alt="HTML5 - Logo" src="https://d2v0x26thbzlwf.cloudfront.net/prod/63/img/rId25dkvbcjq4.s5y.png"/>
+<!-- passamos o nome da imagem no atributo src
+podemos alterar as dimensões da imagem com os atributos width e height
+um atributo muito importante é o "alt". Ele serve para descrevermos uma imagem. Essa
+descrição será exibida caso haja algum problema ao carrega a imagem. -->
+
+<figure>
+    <img alt="HTML5 - Logo" src="https://d2v0x26thbzlwf.cloudfront.net/prod/63/img/rId25dkvbcjq4.s5y.png" />
+    <figcaption>Figura 1. - Logo do HTML5</figcaption>
+<!-- a tag "figure" é utilizada para marcar uma foto, diagrama, ilustrações, etc no documento.
+Ela ajuda a melhorar a semântica em conjunto com a tag "img".
+A tag "figure" pode receber a tag "figcaption" para criar uma legenda para a imagem -->
+</figure>
+
+<audio controls>
+    <source src="" type="audio/ogg">
+    <!-- O atributo "controls" indica que os controles, como play/pause, devem ser exibidos.
+    cada navegador suporta certos tipos de arquivo údio, por isso é comum passarmos mais de uma tag source.
+    source é onde indicamos o arquivo a ser executado. Caso o navegador não reconheça, ele irá pular
+    para o próximo. -->
+</audio>
+
+    <video width="320" height="240" controls>
+        <source src="" type="">
+        <!-- a tag "video" funciona da mesma maneira que a tag "audio", com a diferença que
+        também aceita os atributos width e height, assim como a tag "img". Um atributo muito usado
+        é o atributo "poster". Nele nós podemos passar o endereço de uma imagem que será exibida
+        enquanto o vídeo carrega -->
+    </video>
+</body>
+</html>
