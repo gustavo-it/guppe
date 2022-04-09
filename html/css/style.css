@@ -106,3 +106,56 @@ div{
 escondido ou gerar uma barra de rolagem, quando este conteúdo for maior que o elemento que contém.
 o valor mais interessante é overflow:scroll ou auto, onde será exibido uma barrade rolagem.
 */
+
+/* Position
+   Position: static. Nesse modo os elementos sõ apresentados de acordo com o fluxo do
+   código HTML, sem nada especial. Propriedades top, left...não sutirão efeito.
+
+   Position: fixed. O elemento será posicionado em relação à tela. Ficará fixo na mesma
+   posição.
+
+   Position: relative. O elemento será empurrado em relação à sua posição normal.
+
+   Position: absolute. O elemento será posicionado em relação ao seu elemento antecessor
+   mais próximo que tenha uma posição relativa. Passando atributos top, right.
+
+   z-index: 4.  podemos alterar essa ordem de empilhamento dos elementos com a propriedade z-index.
+    Os elementos que tiverem um valor maior ficarão mais em cima na pilha.
+
+   float: right, lef, top, bottom A propriedade float define quando um elemento deve flutuar.
+   Isso significa que os textos e elementos ao seu lado o contornem ao invés de levar
+    a sua caixa em consideração.
+*/
+
+/* Estilizando as listas*/
+
+ul{
+    /* Colocando uma imagem como marcador */
+    list-style-image: url(https://icons.iconarchive.com/icons/graphicloads/filetype/48/pdf-icon.png);
+    /*list-style-position: inside/outside Altera a posição dos marcadores */
+    /*list-style-type: disc/square/circle/none;  Define o tipo de marcador a ser usado. */
+
+}
+
+/* listas ordenadas */
+ol{ /* Definindo marcadores */
+    list-style-type: decimal;
+    list-style-type: lower-roman;
+    list-style-type: upper-roman;
+    list-style-type: lower-alpha;
+    list-style-type: upper-alpha;
+}
+
+/* Formatando tabelas */
+table, th, td, tr {
+    border: 1px solid black; /* Definindo bordas */
+    border-collapse: collapse; /* Indica que as bordas dos elementos devem se juntar */
+    /* border-spacing: 0px Indica o espaãmento entre as bordas das células da tabela */
+
+}
+
+caption {
+    caption-side: bottom; /* Indica onde a legenda da tabela será posicionada */
+    /* empty-cells: hide Define quando uma célula vazia deve ser oculta. Disponível
+    apenas quando as bordas são separadas. Sem border-collapse*/
+}
