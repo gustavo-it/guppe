@@ -10,7 +10,6 @@ Existem basicamente duas diferenças básicas:
 2 - As tuplas são imutáveis: Isso significa que ao se criar uma tupla ela não muda. Toda
 operação em uma tupla gera uma nova tupla.
 
-
 """
 
 # CUIDADO 1: As tuplas são repersentadas por (), mas veja:
