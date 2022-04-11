@@ -133,7 +133,7 @@ curso = curso.split(',')  # Falando para o split que o separador é uma vírgula
 
 #  Convertendo uma lista em uma string
 
-lista7 = ['php', 'python', 'html']
+lista7 = ['php', 'python', 'Html - Fundamentos']
 curso2 = ' '.join(lista7)  # Definindo um espaço entre os elementos
 
 print(curso2)

@@ -71,3 +71,18 @@ while deseja_cadastrar_produto != 'sair':
         if deseja_cadastrar_produto == 'sair':
             for produtos in lista:
                 print(f'{produtos}', end=' ')
+
+# Acrescentando números em listas:
+insira_numero = int()
+numeros = []
+
+while insira_numero >= 0:
+    insira_numero = int(input('Insira o número: '))
+    if insira_numero >= 0:
+        numeros.append(insira_numero)
+        print('Número acrescententado')
+    if insira_numero < 0:
+        print('Valor inválido.')
+        print('Programa encerrado.')
+for n in numeros:
+    print(n)
