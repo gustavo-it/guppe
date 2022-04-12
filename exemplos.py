@@ -86,3 +86,57 @@ while insira_numero >= 0:
         print('Programa encerrado.')
 for n in numeros:
     print(n)
+
+
+# Acrescentando produtos em um dicionário
+carrinho = []
+nome = ''
+quantidade = int()
+preco = float()
+acrescentar_produtos = ''
+
+lista = {
+    'Nome': nome, 'Quantidade': quantidade, 'Preço': preco
+}
+
+while acrescentar_produtos != 'não':
+    nome = input('Acrescente o nome do produto: ')
+    quantidade = int(input('Acrescente a quantidade: '))
+    preco = float(input('Acrescente o preco: '))
+    acrescentar_produtos = input('Deseja cadastra mais produtos ?')
+    if acrescentar_produtos != 'não':
+        lista['Nome'] = nome  # Acrescentar a chave Nome a variável nome
+        lista['Quantidade'] = quantidade # Acrescentar a chave Quantidade a variável quantidade
+        lista['Preço'] = preco # Acrescentar a chave Preço a variável preco
+        carrinho.append(lista) # Acrescentando os produtos ao carrinho
+    if acrescentar_produtos == 'não':
+        print(carrinho)
+
+
+# Calculando valores em uma tupla
+numero1 = int(input('Digite o número 1: '))
+numero2 = int(input('Digite o número 2: '))
+numero3 = int(input('Digite o número 3: '))
+tuplas = (numero1, numero2, numero3)
+tuplas2 = tuplas + (1, 18, 22)
+
+print('A soma dos valores é: ',sum(tuplas2))
+print('O menor valor é: ', min(tuplas2))
+print('O maior valor é: ', max(tuplas2))
+print(tuplas2)
+
+# Acrescentando números em listas com extend
+numero1 = int(input('Digite o número 1: '))
+numero2 = int(input('Digite o número 2: '))
+numero3 = int(input('Digite o número 3: '))
+lista = []
+lista.extend([numero1, numero2, numero3])
+print(lista)
+
+# Acrescentando palavras em listas com extend
+curso1 = input('Digite o curso 1: ')
+curso2 = input('Digite o curso 2: ')
+curso3 = input('Digite o curso 3: ')
+cursos = []
+cursos.extend([curso1, curso2, curso3])
+print(cursos)
