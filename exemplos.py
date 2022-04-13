@@ -140,3 +140,27 @@ curso3 = input('Digite o curso 3: ')
 cursos = []
 cursos.extend([curso1, curso2, curso3])
 print(cursos)
+
+# Exemplo de desempacotamento de listas em dicionário e obtendo valores e chaves de um dicionário
+carrinho = []
+produto1 = {'nome': 'Playstation 4', 'Quantidade': 1, 'Preço': 2300.00}
+produto2 = {'nome': 'God of War IV', 'Quantidade': 1, 'Preço': 300.00}
+
+carrinho.append(produto1)  # Adicionando produto 1 ao carrinho
+carrinho.append(produto2)  # Adicionando produto 2 ao carrinho
+
+print(carrinho)
+print(type(carrinho))
+
+# Desempacotando cada indice do carrinho(lista) em dicionário
+produto11, produto22 = carrinho
+print(produto11)
+print(produto22)
+print(type(produto11))
+print()  # Quebra de linha
+
+# obtendo chaves e valores dos dicionários produto11 e produto22
+for chave, valor in produto11.items():  # Pra cada chave e valor em produto 11
+    print(f'{chave} : {valor}')  # Print chave e valor
+
+print()  # Quebra de linha
