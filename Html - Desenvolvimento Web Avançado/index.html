@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Importando Font Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Menu item html</title>
+</head>
+<body>
+<header>
+  <H1>
+    Testando variáveis em HTML e css
+  </H1>
+</header>
+<div>
+  <p>Testando efeito linear gradient</p>
+</div>
+
+<!-- Criando o menu -->
+
+<label class="menu-button" for="meuMarcador"> <!-- Atribuindo o id do input ao for do label -->
+        <i class="fa fa-bars" ></i> <!-- Ícone -->
+    </label>
+    <input type="checkbox" id="meuMarcador"> <!-- o id irá nos indicar se o Menu está aberto ou fechado-->
+    <!--Colocando uma pequena lista ao nosso menu-->
+    <ul class="menu" > <!--Estilizando o menu no CSS-->
+        <li class="menu-item" >Home</li> <!--Estilizando o menu-item no CSS-->
+        <li class="menu-item" >Produtos</li>
+        <li class="menu-item" >Sobre nós</li>
+        <li class="menu-item" >Contato</li>
+    </ul>
+    <!--O próximo passo é fazer com que o menu apareça e desapareça dependendo do estado
+    do checkbox. Para isso iremos utilizar o pseudo seletor":checked". Que indica se
+    o checkbox está ou não marcado.
+    Mas não queremos selecionar o Checkbox, e sim, a nossa lista.
+    Como a nossa lista está bem depois do nosso <input>, podemos utilizar o símbolo "+".-->
+
+</body>
+</html>

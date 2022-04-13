@@ -1,0 +1,60 @@
+/* Criando variáveis em CSS */
+/* Primeiro devo definir onde essa variável poderá ser declarada
+Se será somente em uma div ou parágrafo ou será em todo o corpo
+do documento.
+*/
+:root{ /* Podemos utilizar a variável global ':root' para utilizar a variável em todas as tags */
+    --minha-cor:red;
+    --tamanho-letras: 22px;
+    --cor-gradient-azul: rgb(173,216,230);
+    --cor-gradient-creme: rgb(245,255,250);
+}
+
+/* Utilizando uma variável */
+h1 {
+    color: var(--minha-cor);
+    font-size: var(--tamanho-letras);
+}
+
+/* Gradiente Linear
+    background: linear-gradient(direção, cor 1, cor 2)
+    Emitindo a posição. o padrão será to bottom.
+    Se quisermos indicar a direção, indicamos o ponto de parada
+*/
+
+div {
+    height: 200px;
+    width: 500px;             /*Posição,    Cor 1,                      Cor 2.                                                  */
+    background: linear-gradient(to bottom, var(--cor-gradient-azul), var(--cor-gradient-creme));
+}
+
+/* Guardando estados com CSS
+   Serve para indicarmos se queremos deixar um menu aberto ou fechado após um clique.
+*/
+
+.menu { /* Estilizando a lista */
+    display: none; /* Aplicando "display: none" para que o menu não apareça */
+    color: #fff;
+    background-color: #252525;
+    margin: 0;
+    padding: 10px;
+}
+
+.menu-item {
+    list-style-type: none; /* Tirando o marcador dos itens */
+}
+
+/*O próximo passo é fazer com que o menu apareça e desapareça dependendo do estado
+    do checkbox. Para isso iremos utilizar o pseudo seletor":checked". Que indica se
+    o checkbox está ou não marcado.
+    Mas não queremos selecionar o Checkbox, e sim, a nossa lista.
+    Como a nossa lista está bem depois do nosso <input>, podemos utilizar o símbolo "+".*/
+
+#meuMarcador:checked + .menu {
+    display: block; /* O bloco só será exibido se o chekbox estiver selecionado*/
+}
+
+/* Aplicando "display: none" ao checkbox, para que ele não apareça na tela. */
+#meuMarcador {
+    display: none;
+}
