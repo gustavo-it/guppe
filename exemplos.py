@@ -164,3 +164,24 @@ for chave, valor in produto11.items():  # Pra cada chave e valor em produto 11
     print(f'{chave} : {valor}')  # Print chave e valor
 
 print()  # Quebra de linha
+
+# Adicionando elementos numa matriz e iterando sobre ela
+
+listas = [[], []]
+cadastro = ''
+nome = ''
+nota = float()
+
+while cadastro != 'Não':
+    nome = input('Digite o nome do aluno: ')
+    nota = float(input('Digite a do nota: '))
+    if cadastro != 'Não':
+        listas[0].append(nome.title())  # Adicionando informações a primeira lista.
+        listas[1].append(nota)  # Adicionando informações a segunda lista.
+        cadastro = input('Deseja continuar cadastrando ? ')
+
+#  Iterando sobre listas
+for nome in listas[0]:  # Acessando a primeira lista
+    for nota in listas[1]:  # Acessando a segunda lista
+        print(f"Nome do aluno: {nome}. Nota: {nota}")  # Pegando informações da primeira e segunda lista.
+        break

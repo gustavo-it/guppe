@@ -15,17 +15,20 @@ Se a gente pensar em uma função, já sabemos que temos funções que:
 - Possuem entrada e saída;
 
 """
+
+
 # Refatorando uma função quadrado_de_7
 
 
 def quadrado(numero):
-   # return numero * numero
+    # return numero * numero
     return numero ** 2
 
 
 print(quadrado(4))  # Preciso passar o parâmetro
 print(quadrado(5))
 print(quadrado(6))
+
 
 # Refatorando cantar_parabens
 
@@ -36,6 +39,7 @@ def cantar_parabens(aniversariante):
 
 print(cantar_parabens('Maria'))
 print(cantar_parabens('Patrícia'))
+
 
 # Funções podem ter N parãmetros de entrada, ou seja, podemos receber como entrada
 # Numa função quantos parâmetros forem necessários. Eles são separados por vírgula.
