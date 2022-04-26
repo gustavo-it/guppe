@@ -185,3 +185,46 @@ for nome in listas[0]:  # Acessando a primeira lista
     for nota in listas[1]:  # Acessando a segunda lista
         print(f"Nome do aluno: {nome}. Nota: {nota}")  # Pegando informações da primeira e segunda lista.
         break
+
+# Desempacotar dicionarios dentro de uma lista
+
+aquarium_creatures = [
+{"name": "sammy", "species": "shark", "tank number": 11, "type": "fish"},
+{"name": "ashley", "species": "crab", "tank number": 25, "type": "shellfish"},
+{"name": "jo", "species": "guppy", "tank number": 18, "type": "fish"},
+{"name": "jackie", "species": "lobster", "tank number": 21, "type": "shellfish"},
+{"name": "charlie", "species": "clownfish", "tank number": 12, "type": "fish"},
+{"name": "olly", "species": "green turtle", "tank number": 34, "type": "turtle"}
+]
+
+# OBTENDO AS CHAVES E VALORES
+for valor in aquarium_creatures:
+    print('')
+    for chave in valor.keys():
+        print(f'{chave}: {valor[chave]}')
+
+# Utilizando uma função
+
+cidades = [
+    ('Berlim', 29),
+    ('Cairo', 36),
+    ('Buenos Aires', 19),
+    ('Los Angeles', 26),
+    ('Tokio', 27),
+    ('Nova York', 27),
+    ('Londres', 22)
+]
+
+novos_valores = []
+
+
+def c_para_f():
+    for cidade, temperatura in cidades:
+        fahrenheit = 9/5 * temperatura + 32
+        print(f"{cidade}: {fahrenheit}")
+    return ''
+
+
+print(c_para_f())
+
+# Transformar em fahrenheit: f = 9/5 * c + 32
