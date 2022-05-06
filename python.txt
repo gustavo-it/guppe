@@ -1,0 +1,4 @@
+Programação Python
+Do básico ao avançado
+Retorna um valor booleano, ou seja, um True ou False. x é convertido usando o procedimento
+padrão de teste de verdade.
